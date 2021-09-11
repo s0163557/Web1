@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>index</title>
+    </head>
+
+    <body>
+        <ol>
+            <li><a href="http://example.com" name="ref">абсолютная ссылка на example.com</a> </li>
+            <li><a href="https://example.com">абсолютная по https</a>   </li>
+            <li><a href="ftp://ftp.example.com/file.txt">ссылка на ftp без авторизации</a>  </li>
+            <li><a href="ftp://user123:123@ftp.example.com/file.txt">ссылка на ftp с авторизацией</a>  </li>
+            <li><a href="ftp://user123:123@ftp.example.com/file.txt">ссылка на ftp с авторизацией</a>  </li>
+            <li><a href="https://example.com#kor">ссылка на самый верх example.com</a>  </li>
+            <li><a href="#galom">ссылка на нижнюю ссылку на текущем сайте</a>  </li>
+            <li><a href="http://example.com?parametr1=value1&parametr2=value2" name="galom"> ссылка с параметрами </a>  </li>
+            <li> <ol>
+                <li><a href="#ref">ссылка на первую ссылку</a></li>
+                <li><a href="#ref2">ссылка на первую форму</a></li>
+            </ol>
+            <li><a> ссылка без href </a>  </li>
+            <li><a href=""> ссылка с пустым href </a>  </li>
+            <li><a href="http://example.com" rel="nofollow">ссылка с запрещенным переходом по поисковикам </a>  </li>
+            <li><a href="http://example.com" rel="nofollow"><noindex>ссылка с запрещенным переходом по поисковикам</noindex></a>  </li>
+            <li><a> ash nazg <a href="gimbatul.com">gimbatul</a></a>  </li>
+            <li><a href="index.html"><img src="image.jpg" alt="Цветок" style="width: 200px;" /></a> </li>
+
+              
+            <li><img src="image.jpg" alt="Цветок" usemap = "#dolguldor" style="width: 400px;" /> 
+            <map name="dolguldor">
+            <area shape = "rect" coords = "0,0,50,100" href = "index.html" alt = "Прямоугольный цветок" >
+            <area shape = "socol" coords = "100,50,300,100" href = "index.html" alt = "Круглый цветок" >
+            </map></li>
+
+            <li><a href="index.html">относительная ссылка на текущий каталог</a> </li>
+            <li><a href="about/about.html">относительная ссылка в каталоге about</a> </li>
+            <li><a href="../index.html">относительная на страницу в каталоге уровнем выше текущего</a></li>
+            <li><a href="../../index.html">относительная на страницу в каталоге на два уровня выше текущего</a></li>
+            <li><a href ="index.html">сокращенная ссылка на главную </a></li>
+            <li><a href ="/about.html">сокращенная ссылка на внутреннюю </a></li>
+        </ol>
+
+        <form action="/" method="POST">
+            <label id="ref2">
+            Имя<br />
+            <input name="name1"
+              value="Пашкент" />  
+            </label>  <br />
+
+            <label>
+                Мыло<br />
+                <input name="mail1"
+                  value="@@@@@mail.com" />  
+                </label>  <br />
+                
+            <label>
+            Дата рождения<br />
+            <input name="date1"
+            value="20 апреля 1889 г." />  
+            </label>  <br />
+
+            <p>Пол</p>
+            <label><input type="radio" name="radio1" value="W"  />
+                Ж</label>
+            <label><input type="radio" name="radio1" value="M" />
+                М</label><br />
+
+                <p>Количество конечностей</p>
+            <label><input type="radio" name="radio2" value="1"  />
+                    1</label>
+            <label><input type="radio" name="radio2" value="2" />
+                    2</label>
+            <label><input type="radio" name="radio2" value="3"  />
+                        3</label>
+            <label><input type="radio" name="radio2" value="4" />
+                        4</label><br />
+
+            <label>
+                <p>Альбомы Powerwolf</p> 
+                <select name="multifield1" multiple="multiple">
+                <option value="1k">Lupus Dei</option>
+                <option value="2k" selected="selected">Beast of Gevudan</option>
+                <option value="3k" selected="selected">Bible of the beast</option>
+                <option value="4k" selected="selected">Sacrament of sin</option>
+                </select>
+            </label><br />
+
+            <label>
+                <p>Биографию дайте</p>
+                <textarea name="field2">писать тут</textarea>
+              </label><br />
+
+              <label><input type="checkbox" checked="checked"
+                name="check-1" />
+                На сайт не смотрел (а)</label><br />
+
+            <button><a href="index.html">Отправить</a></button>
+            </form>
+
+        </body>
+
+ </html>
