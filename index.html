@@ -3,8 +3,25 @@
     <head>
         <meta charset="UTF-8">
         <title>Lishenkov</title>
+        <link rel="stylesheet" href="style.css">
     </head>
+
     <body>
+
+        <header class="header">
+            <div class="hren">
+            <div class="logo"></div>
+            <h1 class="header_text">Название Сайта</h1> </div> </div>
+        </header>
+
+        <nav class="menu">
+            <ul>
+            <li><a href="#ref">  Список </a></li>
+            <li><a href="#ref2"> Форма </a></li>
+            <li><a href="#ref3"> Таблица </a></li>
+            </ul>
+        </nav>
+
         <h1 id="ref">Список</h1>
         <ol>
             <li><a href="http://example.com">абсолютная ссылка на example.com</a> </li>
@@ -13,17 +30,9 @@
             <li><a href="ftp://user123:123@ftp.example.com/file.txt">ссылка на ftp с авторизацией</a>  </li>
             <li><a href="https://example.com#kor">ссылка на самый верх example.com</a>  </li>
             <li><a href="#galom">ссылка на нижнюю ссылку на текущем сайте</a>  </li>
-            <li><a href="http://example.com?parametr1=value1&parametr2=value2" id="galom"> ссылка с параметрами </a>  </li>
-            
-            <li>
-                <nav>
-                    <ul>
-                <li><a href="#ref" title="beginning">навигация на список</a></li>
-                <li><a href="#ref2" title="end">навигация на форму</a></li>
-                    </ul>
-                </nav>
-            </li>
-
+            <li><a href="http://example.com?parametr1=value1&parametr2=value2" id="galom"> ссылка с параметрами </a>  </li>    
+            <li><a href="#ref" title="beginning">навигация на список</a></li>
+            <li><a href="#ref2" title="end">навигация на форму</a></li>
             <li><a> ссылка без href </a>  </li>
             <li><a href=""> ссылка с пустым href </a>  </li>
             <li><a href="http://example.com" rel="nofollow">ссылка с запрещенным переходом по поисковикам </a>  </li>
@@ -45,6 +54,38 @@
             <li><a href ="index.html">сокращенная ссылка на главную </a></li>
             <li><a href ="/about.html">сокращенная ссылка на внутреннюю </a></li>
         </ol>
+
+        <table id="ref3">
+
+            <tr>
+            <th>Колонка1</th>
+            <th>Колонка2</th>
+            <th>Колонка3</th>
+            </tr>
+            
+            <tr>
+            <td>столбец1</td>
+            <td>столбец2</td>
+            <td>столбец3</td>
+            </tr>
+
+            <tr>
+            <td colspan="2">столбец1+2</td>
+            <td rowspan="2">столбец2/5</td>
+            </tr>
+
+            <tr>
+            <td>столбец1</td>
+            <td>столбец2</td>
+            </tr>
+
+            <tr>
+            <td>Столбец1</td>
+            <td>Столбец2</td>
+            <td>Столбец3</td>
+            </tr>    
+
+        </table>
 
         <h1 id="ref2">Форма</h1>
         <form action="/" method="POST">
@@ -104,6 +145,7 @@
             <button formaction="index.html">Отправить</button>
             </form>
 
+            <footer class="footer_text"> Sinica privet</footer>
         </body>
 
  </html>
