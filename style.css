@@ -1,29 +1,99 @@
-header {
-	background: #c75665;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 70px;
+@media (max-width: 999px){
+    header {
+        background: #c7692b;
+        height: 100px;
+    }
+    
+    
+    .hren{
+        width: 100%;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .header_text{
+        font-family: 'Arial', sans-serif;
+        color:rgb(123, 186, 228);
+        font-size: 300%;
+    }
+    
+    .logo{
+        background: url(logo.jpeg);
+        height: 100px;
+        width: 190px;
+    }
+    
+    .menu{
+        list-style: none;
+    }
+    .menu li{
+        display: inline-block;
+    }
+    
+    footer{
+        background: #c7692b;
+        display: flex;
+    }
+    
+    .footer_text{
+        font-family: 'Arial', sans-serif;
+        color:rgb(123, 186, 228);
+        font-size: 350%;
+        flex-direction: row-reverse;
+    }
+    
+    body{
+        text-align: center;
+        margin-bottom: 0 auto;
+    }
+    
+    ol{display: inline-block;
+        flex-direction: column;}
+    
+    table {
+        width: 300px; 
+        border: 1px solid green; 
+        margin: auto; 
+       }
+    
+ #virodok{
+        display: flex;
+        flex-direction: column;
+    }
+    
+.table{
+    order: 2;
+}
+.form{
+    order: 1;
+}
 }
 
+@media (min-width: 1000px){
+header {
+	background: #c7692b;
+    height: 100px;
+}
+
+
 .hren{
-    padding: 0 0 0 0;
-	max-width:  960px;
-	margin: 0 auto 0 auto;
+	width: 100%;
     height: 70px;
+    display: flex;
+    justify-content: center;
 }
 
 .header_text{
     font-family: 'Arial', sans-serif;
-    color:rgb(170, 44, 139);
-    font-size: 350%;
+    color:rgb(123, 186, 228);
+    font-size: 300%;
 }
 
 .logo{
-    width: 150px; 
-    height: 70px; 
     background: url(logo.jpeg);
-    float:  left;
+    height: 100px;
+    width: 190px;
 }
 
 .menu{
@@ -34,25 +104,28 @@ header {
 }
 
 footer{
-    background: #c75665;
+    background: #c7692b;
+    display: flex;
 }
 
 .footer_text{
     font-family: 'Arial', sans-serif;
-    color:rgb(170, 44, 139);
+    color:rgb(123, 186, 228);
     font-size: 350%;
-    text-align: center;
+    flex-direction: row-reverse;
 }
 
 body{
     text-align: center;
     margin-bottom: 0 auto;
 }
-ol{display:inline-block;}
+
+ol{display: inline-block;
+    flex-direction: column;}
 
 table {
     width: 300px; 
     border: 1px solid green; 
     margin: auto; 
    }
-
+}
